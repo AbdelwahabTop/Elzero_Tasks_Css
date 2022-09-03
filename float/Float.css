@@ -1,0 +1,37 @@
+.parent .Full {
+    width: calc((100% - 30px));
+}
+
+.parent .three {
+    width: calc((100% - 60px)/ 3);
+}
+
+.parent .half {
+    width: calc((100% - 45px) / 2);
+}
+
+.parent .four {
+    width: calc((100% - 75px) / 4);
+    margin-bottom: 15px;
+}
+
+.parent div {
+    border-radius: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 15px;
+    margin-top: 15px;
+    padding: 15px 0px;
+    background-color: #85e9f7;
+    text-align: center;
+    float: left;
+}
+
+.parent {
+    background-color: rgb(3, 90, 103);
+    width: 1000px;
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
