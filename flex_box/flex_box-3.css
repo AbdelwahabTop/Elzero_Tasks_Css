@@ -1,0 +1,112 @@
+.parent-1 {
+    display: flex;
+    width: 600px;
+    height: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 0.5px black solid;
+    background-color: #eee;
+    color: white;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.parent-1 div {
+    display: flex;
+    height: calc(95% / 3);
+    background-color: #009688;
+    align-items: center;
+    justify-content: center;
+}
+
+.parent-1 .one {
+    width: 40px;
+    align-self: flex-end
+}
+
+.parent-1 .two {
+    width: 60%;
+}
+
+.parent-1 .three {
+    width: 40px;
+    align-self: flex-end;
+}
+/* ass.five */
+.parent-2 {
+    display: flex;
+    width: 600px;
+    height: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 0.5px black solid;
+    background-color: #eee;
+    justify-content: space-between;
+}
+
+.parent-2 div {
+    display: flex;
+    height: 50%;
+    width: calc(65% / 4);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.parent-2 .one {
+    background-color: #ff9800;
+    order: 2;
+}
+
+.parent-2 .two {
+    background-color: #8bc34a;
+    order: 3;
+    align-self: flex-end;
+}
+
+.parent-2 .three {
+    background-color: #795548;
+    order: 4;
+}
+
+.parent-2 .four {
+    background-color: #673ab7;
+    order: 1;
+    align-self: flex-end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
