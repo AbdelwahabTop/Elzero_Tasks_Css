@@ -1,0 +1,77 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    margin: 50px auto;
+    background-color: #eee;
+    text-align: center;
+    /* position: relative; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+    transition-timing-function: ease;
+}
+
+.chiled {
+    /* width: 300px; */
+    /* padding-top: 30px; */
+    padding: 20px;
+    background-color: #ccc;
+    /* text-align: center; */
+    /* float: left; */
+    /* position: absolute; */
+    /* margin-left: 28px; */
+    /* margin-top: 20px; */
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;
+    transition-timing-function: linear;
+}
+
+.main:hover {
+    margin-top: -5px;
+}
+
+.main:hover .chiled {
+    margin-top: 30px;
+}
+/* TWO */
+.two {
+    width: 400px;
+    margin: 20px auto;
+    background-color: #ccc !important;
+    color: black !important;
+    padding: 20px;
+    border: 1px solid black !important;
+    font-size: 20px !important;
+    position: relative;
+    text-indent: -2000px !important
+}
+
+.two::after {
+    content: "Elzero";
+    color: black;
+    font-size: 20px;
+    text-indent: 0px;
+    position: absolute;
+    left: 165px
+}
+/* three */
+
+:root {
+    --mainColor: #009688;
+    --mainPadding: 10px;
+} 
+  
+.three {
+    padding: var(--mainPadding, 10px);
+    border: 5px var(--mainColor, black) solid;
+    color: var(--mainColor, red);
+    margin: var(--mainPadding, 10px);
+}
