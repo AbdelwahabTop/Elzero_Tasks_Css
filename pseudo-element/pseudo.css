@@ -1,0 +1,36 @@
+div {
+    width: 300px;
+    height: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.gray {
+    background-color: #eee;
+}
+.red {
+    background-color: red;
+}
+
+.Two {
+    width: 400px;
+    padding: 20px;
+    margin: auto;
+    background-color: rgb(135, 130, 130);
+    text-align: center;
+    position: relative;
+}
+
+.Two::first-letter {
+    background-color: red;
+    padding: 10px;
+    position: absolute;
+    margin-top: -10px;
+    float: left;
+    left: -10px;
+    margin-left: -35px;
+}

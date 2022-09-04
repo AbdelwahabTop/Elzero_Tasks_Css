@@ -1,0 +1,60 @@
+.one p {
+    width: 400px;
+    padding: 30px 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-left: 5px rgb(236, 61, 38) solid;    
+    background-color: #CCC;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.one p::before {
+    content: attr(data-person);
+    width: 60px;
+    padding: 10px 0px;
+    background-color: #CCC;
+    position: absolute;
+    left: -100px;
+    top: 50%;
+    margin-top: -19px;
+    text-align: center;
+}
+
+.one p::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    left: -25px;
+    border-width: 10px;
+    border-color: transparent  rgb(236, 61, 38) transparent transparent;
+    border-style: solid;
+}
+  
+.two p {
+    width: 400px;
+    padding: 20px 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-right: 5px rgb(236, 61, 38) solid;    
+    background-color: #CCC;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    counter-increment: count;
+
+}
+
+.two p::before {
+    content: counter(count);
+    background-color: red;
+    position: absolute;
+    padding: 20px 30px;
+    top: 50%;
+    margin-top: -29.2px;
+    margin-left: -78px;
+}
