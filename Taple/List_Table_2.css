@@ -1,0 +1,39 @@
+ul {
+    list-style-type: none;
+}
+
+li {
+    background-color: rgb(6, 141, 199);
+    padding: 10px;
+    margin: 20px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+li .one li {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    color: rgb(125, 3, 44);
+    font-family:initial;
+}
+
+li .two li {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    list-style-type:upper-roman;
+    color: rgb(125, 3, 44);
+    font-family: initial;
+
+}
+
+li ul li {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    list-style-type: circle;
+    color: rgb(125, 3, 44);
+    font-family: initial;
+
+}

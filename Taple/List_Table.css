@@ -1,0 +1,80 @@
+
+.green {
+    background-color: rgb(16, 181, 93);
+    top: 20px;
+    left: 20px;
+    z-index: 3;
+}
+.red {
+    background-color: rgb(255, 51, 0);
+    top: 30px;
+    left: 30px;
+    z-index: 4;
+}
+.blue {
+    background-color: rgb(39, 114, 244);
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+.black {
+    background-color: black;
+    top: 20px;
+    left: 10px;
+    z-index: 1;
+}
+.ass_1 div {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+.ass_1 {
+    height: 280px;
+}
+
+/* //////////////////////////////////////////////// */
+body {
+    padding-left: calc( (100% - 485px) /2 );
+}
+
+.ass_2 {
+    width: 400px;
+    background-color: #eee;
+    padding: 20px;
+    position: absolute;
+    top: 380px;
+    text-align: center;
+    border-left: 3px dodgerblue solid;
+    border-top: 3px rgb(248, 78, 78) solid;
+    border-right: 3px dodgerblue solid;
+    border-bottom: 3px rgb(248, 78, 78) solid;
+}
+.ass_2 span {
+    color: white;
+    width: 35px;
+    padding: 7px 2px;
+    background-color:dodgerblue;
+    position: absolute;
+    z-index: 60;
+    text-align: center;
+}
+.top-left {
+    top: -20px;
+    left: -20px;
+    border-right: 3px rgb(248, 78, 78) solid;
+}
+.bottom-left {
+    top: 100px;
+    left: -20px;
+    border-right: 3px rgb(248, 78, 78) solid;
+}
+.top-right {
+    top: -20px;
+    right: -20px;
+    border-left: 3px rgb(248, 78, 78) solid; 
+}
+.bottom-right {
+    top: 100px;
+    right: -20px;
+    border-left: 3px rgb(248, 78, 78) solid;
+}

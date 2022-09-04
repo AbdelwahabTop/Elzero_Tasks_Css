@@ -1,0 +1,27 @@
+table {
+    width: 700px;
+    /* border: 2px rgb(244, 192, 96) solid; */
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    width: 120px;
+}
+
+table td {
+    padding: 10px;
+    background-color: teal;
+    border: 2px rgb(244, 192, 96) solid;
+    text-align: center;
+}
+
+table thead td {
+    color: white;
+    background-color: rgb(3, 47, 36);
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    border-color: gold;
+}
