@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    background: #edf2f8;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    line-height: 1.7;
+    font-size: 13px;
+}
+
+.container {
+    /* background-color: #EEE; */
+    height: 100vh;
+    margin: 10px;
+
+    display: grid;
+    gap: 10px;
+    grid-template-columns:  repeat(12, 1fr);
+    grid-template-rows: repeat(12, 10%);
+}
+
+.container div {
+    padding: 10px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 10px;
+    padding: 30px;
+    border-bottom: 2px red solid;
+    background-image: url(bg-pattern-quotation.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: top 95% right 5%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.osama {
+    grid-area: 1/ 1/ 5/ 7;
+    background: hsl(263, 55%, 52%);
+    color: white;
+}
+.ahmed {
+    grid-area: 1/ 7/ 5/ 10;
+    background: hsl(217, 19%, 35%);
+    color: #fff;
+}
+.shady {
+    grid-area: 1/ 10/ 13/ 13;
+    background: hsl(219, 29%, 14%);
+    color: #fff;
+}
+.mi {
+    grid-area: 5/ 1/ 13/ 4;
+    background: hsl(217, 19%, 35%);
+    color: white;
+}
+.mm {
+    grid-area: 5/ 4/ 9/ 10;
+    background-color: white;
+}
+.ezz {
+    grid-area: 9/ 4/ 13/ 10;
+}
+.ms {
+    grid-area: 13/ 1/ 17/ 4;
+} 
+.ibrahim {
+    grid-area: 13/ 4/ 17/ 7;
+    background-color: black;
+    color: white;
+}
+.gamal {
+    grid-area: 13/ 7/ 17/ 10;
+    background: hsl(219, 29%, 14%);
+    color: white;
+}
+.eman {
+    grid-area: 13/ 10/ 17/ 13;
+    background-color: white;
+}
+
+h3 {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+span {
+    font-size: small;
+    color: #eee;
+}
+
+.p-1 {
+    font-size: x-large;
+    font-weight: bold;
+    line-height: 1.2;
+
+}

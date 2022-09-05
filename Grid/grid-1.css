@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 20px auto;
+
+    display: grid;
+    gap: 20px;
+    grid-template-columns:  repeat( 3, 1fr);
+    grid-template-rows:  12% 1fr;
+
+    counter-reset: Element;
+}
+
+.grid div {
+    display: flex;
+    background-color: #607d8b;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid div::before {
+    counter-increment: Element;
+    content: "Element " counter(Element);
+
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+hr {
+    margin: 40px;
+}
+/* --------------Assignment-2------------------- */
+.layout {
+    display: grid;
+    height: 100vh;
+    grid-template-columns:  repeat(10, 1fr);
+    grid-template-rows:  9% 1fr 9%;
+    grid-template-areas: "header header header header header header header header header header"
+               "section section section section section section section section aside aside"
+               "footer footer footer footer footer footer footer footer footer footer ";
+}
+
+header {
+    background-color: #03a9f4;
+    grid-area: header;
+}
+
+section {
+    background-color: orangered;
+    grid-area: section;
+}
+
+aside {
+    background-color: #607d8b;
+    grid-area: aside;
+}
+
+footer {
+    background-color: #009688;
+    grid-area: footer;
+}
+
+header::before {
+    content: "Header";
+}
+section::before {
+    content: "Section";
+}
+aside::before {
+    content: "Aside";
+}
+footer::before {
+    content: "Footer";
+}
+
+header, section, aside, footer {
+    padding: 22px;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
