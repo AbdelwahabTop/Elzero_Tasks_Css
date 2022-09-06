@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+.one {
+    width: 300px;
+    height: 200px;
+    margin: 50px auto;
+    background-color: #eee;
+
+    color: #03a9f4;
+    font-size: 60px;
+    font-weight: bold;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one::before {
+    content: "";
+    width: 300px;
+    height: 200px;
+    background-color: #03a9f4;
+
+    transform: rotate(-5deg);
+
+    position: absolute;
+    z-index: -1;
+}
+
+.one::after {
+    content: "";
+    width: 300px;
+    height: 200px;
+    background-color: #e91e63;
+
+    transform: rotate(5deg);
+
+    position: absolute;
+    z-index: -1;
+}
+
+hr {
+    margin: 40px;
+}
+/* ---------------Assigment 2------------------- */
+
+.two {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 50px auto;
+    background-color: #eee;
+
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.two::before {
+    content: "";
+    border: 10px solid;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    border-color: #03a9f4 #03a9f4 #03a9f4 transparent;
+    position: absolute;
+
+    transition: 0.5s;
+}
+
+.two::after {
+    content: "";
+    border: 10px solid;
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    border-color: #e91e63 transparent #e91e63 #e91e63;
+    position: absolute;
+
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.two:hover::before {
+    transform: rotate(1turn);
+}
+.two:hover::after {
+    transform: rotate(1turn);
+}

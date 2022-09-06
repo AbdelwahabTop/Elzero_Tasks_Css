@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.one {
+    width: 150px;
+    padding: 20px;
+    margin: 40px auto;
+    background-color: orangered;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.one::after {
+    content: "";
+    width: 150px;
+    height: 100%;
+    background-color: orangered;
+    position: absolute;
+
+    left: 0px;
+    top: -1px;
+    transform: skew(-7deg, -20deg);
+    z-index: -1;
+}
+.one::before {
+    content: "";
+    width: 150px;
+    height: 100%;
+    background-color: orangered;
+    position: absolute;
+
+    left: 0px;
+    top: 1px;
+    transform: skew(7deg, 20deg);
+    z-index: -1;
+}
+
+hr {
+    margin: 40px;
+}
+
+/* -----------Assignment 2 ---------- */
+.two {
+    width: 150px;
+    padding: 20px;
+    margin: 40px auto;
+    background-color: #009688;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.two::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #009688;
+    position: absolute;
+
+    left: -15px;
+    top: 0px;
+    transform: skew(19deg, 0deg);
+    z-index: -1;
+}
+.two::after {
+    content: "";
+    width: 20px;
+    height: 100%;
+    background-color: #009688;
+    position: absolute;
+
+    left: -40px;
+    top: 0px;
+    transform: skew(19deg, 0deg);
+    z-index: -1;
+}
+/* -----------Assignment 3 ---------- */
+.three {
+    width: 200px;
+    height: 200px;
+    margin: 140px auto;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #607d8b;
+    color: white;
+    border-bottom: 5px black solid;
+    position: relative;
+}
+
+.three::before {
+    content: "";
+    width: 137px;
+    height: 137px;
+    background-color: black;
+    border-left: 5px white solid;
+    border-bottom: 5px white solid;
+    transform: rotate(-45deg);
+    z-index: 2;
+    position: absolute;
+    top: -71px;
+    left: 29px;
+}
+.three::after {
+    content: "Elzero";
+    color: white;
+    font-size: large;
+    position: absolute;
+    left: 10px;
+    top: 170px;
+}
+/* -----------Assignment 4 ---------- */
+.four {
+    width: 200px;
+    height: 200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgb(252, 164, 179);
+    color: white;
+
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.four::before {
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-color: #1692fc;
+    color: white;
+
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    left: 0;
+    top: 0;
+}
+
+.four:hover {
+    transform: rotateX(180deg);
+
+}
+
+.four::after{
+    content: "Front";
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+    position: absolute;
+    left: 35%;
+    top: 45%;
+} 
